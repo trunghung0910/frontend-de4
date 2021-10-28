@@ -1,0 +1,41 @@
+//flex
+.flex () {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+//btn
+.btn (@width,@height) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: @width;
+    height: @height;
+}
+
+//transform
+.transformer (@scale) {
+    transform: @scale;
+    -webkit-transform: @scale;
+    -moz-transform: @scale;
+    -o-transform: @scale;
+    -ms-transform: @scale;
+}
+
+//transition
+.transit (@attr, @sec) {
+    transition: @attr, @sec;
+    -webkit-transition: @attr, @sec;
+    -moz-transition: @attr, @sec;
+    -o-transition: @attr, @sec;
+    -ms-transition: @attr, @sec;
+}
+
+// col
+.col (@width) {
+    width: @width;
+    padding: 0 15px;
+    margin: 30px 0;
+    box-sizing: border-box;
+}

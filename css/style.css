@@ -102,6 +102,27 @@ input {
 .header__inner .menu-bar__item a {
   color: #fff;
 }
+.header__inner .menu-bar .menu-search-form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  display: none !important;
+}
+.header__inner .menu-bar .menu-search-form form {
+  width: 100%;
+}
+.header__inner .menu-bar .menu-search-form form input {
+  width: 93%;
+  outline: none;
+  border: none;
+  border-radius: 30px;
+  padding: 5px;
+}
+.header__inner .menu-bar .menu-search-form i {
+  align-self: center;
+  margin-top: 5px;
+}
 .header__inner .icon {
   display: flex;
 }
@@ -114,6 +135,25 @@ input {
 .header__inner .icon__item:last-child {
   padding-right: 0;
   border-right: 0;
+}
+.header__inner .icon .search {
+  position: relative;
+}
+.header__inner .icon .search .form-search {
+  display: none;
+  z-index: 10;
+  position: absolute;
+  top: 30px;
+  right: 0;
+  padding: 10px;
+  background-color: #777777;
+}
+.header__inner .icon .search .form-search form {
+  display: flex;
+}
+.header__inner .icon .search .form-search form input {
+  width: 300px;
+  outline: none;
 }
 .header__inner .icon .menu-icon {
   display: none;
@@ -532,6 +572,9 @@ input {
     padding: 10px 0;
     font-size: 25px;
   }
+  .header__inner .menu-bar .menu-search-form {
+    display: flex !important;
+  }
   .header__inner .menu-bar .menu-close {
     display: block;
     position: absolute;
@@ -551,6 +594,9 @@ input {
   }
   .header__inner .icon .menu-icon {
     display: block;
+  }
+  .header__inner .icon .search {
+    display: none;
   }
   .slider__title {
     font-size: 45px;
@@ -632,6 +678,15 @@ input {
   .category__item .content .summary {
     padding: 0 5px;
   }
+  .footer__bottom {
+    margin-top: 20px;
+  }
+  .footer__bottom .info__item {
+    margin: 0;
+  }
+  .footer__bottom .info__item .content {
+    margin-top: 0;
+  }
 }
 @media all and (max-width: 576px) {
   .header__inner .icon {
@@ -680,15 +735,8 @@ input {
   .footer__top .summary {
     padding: 20px;
   }
-  .footer__bottom {
-    margin-top: 20px;
-  }
   .footer__bottom .info__item {
-    margin: 0;
     padding: 0 4px;
-  }
-  .footer__bottom .info__item .content {
-    margin-top: 0;
   }
   .footer__bottom .info__item .content a {
     padding: 5px 0;

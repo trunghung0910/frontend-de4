@@ -15,6 +15,12 @@ $(document).ready(function () {
         $(".menu-bar").removeClass('active');
         $(".cover").removeClass('active');
     });
+    // Search 
+    $(".fa-search").click(function (e) { 
+        e.preventDefault();
+        $(this).find('.form-search').toggle('show');
+        $(this).siblings().toggle('hide');    
+    });
     //Scroll menu 
     $(window).scroll(function () { 
         if ($(window).scrollTop()) {

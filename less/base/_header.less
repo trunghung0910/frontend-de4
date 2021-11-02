@@ -40,6 +40,25 @@
                     color: @white-color;
                 }
             }
+            .menu-search-form {
+                .flex();
+                width: 80%;
+                display: none !important;
+                form {
+                    width: 100%;
+                    input {
+                        width: 93%;
+                        outline: none;
+                        border: none;
+                        border-radius: 30px;
+                        padding: 5px;
+                    }
+                }
+                i {
+                    align-self: center;
+                    margin-top: 5px;
+                }
+            }
         }
         .icon {
             display: flex;
@@ -51,6 +70,25 @@
                 &:last-child {
                     padding-right: 0;
                     border-right: 0;                   
+                }                
+            }
+            .search {
+                position: relative;
+                .form-search {
+                    display: none;
+                    z-index: 10;
+                    position: absolute;
+                    top: 30px;
+                    right: 0;
+                    padding: 10px;
+                    background-color: @grey-color;
+                    form {
+                        display: flex;
+                        input {
+                            width: 300px;
+                            outline: none;
+                        }
+                    }
                 }
             }
             .menu-icon {

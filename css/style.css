@@ -514,9 +514,6 @@ input {
 .footer__bottom .info__item .content a:last-child {
   padding-top: 9px;
 }
-.footer__bottom .info__item .content a:nth-child(3) {
-  letter-spacing: 0.02em;
-}
 .footer__bottom .info__item .content .time {
   word-spacing: -0.05em;
 }
@@ -525,6 +522,9 @@ input {
 }
 .footer__bottom .info__item .content .address .fa-map-marker-alt {
   margin-right: 20px;
+}
+.footer__bottom .info__item .content .email {
+  letter-spacing: 0.02em;
 }
 .footer .copy-right {
   margin-top: 8px;

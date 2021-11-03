@@ -21,25 +21,34 @@
             flex-direction: column;
             justify-content: center;
             background-color: @white-color;
-            height: 250px;
-            padding: 0 50px;            
+            height: 250px;  
             text-align: center;
+            img {
+                margin-bottom: 25px;
+            }
             .title {
                 font-weight: 700;
                 color: @black-color;
                 font-size: 18px;
-                line-height: 28px;
+                line-height: 18px;
                 text-transform: uppercase;
-                padding-top: 24px;
-                padding-bottom: 16px;
+                // padding: 25px 0;
+                // padding-bottom: 20px;
             }
             .summary {
                 font-size: 14px;
                 line-height: 24px;
                 font-weight: 400;
-                color: @grey-color;               
+                color: @grey-color;     
+                margin: 0 13%;  
+                margin-top: 21px;        
+            }                          
+        }
+        &:first-child {
+            .content {
+                padding-top: 13px;
+                box-sizing: border-box;
             }
-                            
         }
     }
 }
@@ -146,7 +155,7 @@
         text-align: center;
         img {
             padding-top: 44px;
-            padding-bottom: 24px;
+            padding-bottom: 23px;
             margin: 0 auto;
         }
         .title {
@@ -155,12 +164,12 @@
             color: @black-color;
         }
         .summary {
-            width: 758px;
-            margin: 0 auto;
+            margin: auto 17%;
             font-size: 18px;
+            line-height: 30px;
             font-weight: 400;
             color: @grey-color;
-            padding-bottom: 31px;
+            padding-bottom: 27px;
         }
         .client-name {
             font-size: 18px;

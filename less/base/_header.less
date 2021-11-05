@@ -6,46 +6,64 @@
     opacity: 0;
     z-index: -1;
 }
-.cover.active{
+
+.cover.active {
     opacity: 0.9;
     z-index: 100;
     .transit(all, .5s);
 }
+
 .header {
-    height: 100px;
+    padding: 16px 0;
     width: 100%;
-    display: flex;
-    align-items: center;
     position: fixed;
     z-index: 999;
     top: 0;
-    left: 0;  
+    left: 0;
     background-color: @bg-header;
+
     &__inner {
         .flex();
         font-size: 16px;
         color: @white-color;
         font-weight: 400;
         padding-top: 6px;
+
         .menu-bar {
             box-sizing: border-box;
             padding-right: 15px;
+
             .menu-close {
                 display: none;
             }
+
             &__item {
                 display: inline-flex;
                 padding: 0 24px;
+
                 a {
                     color: @white-color;
+
+                    &:hover {
+                        color: @main-color;
+                    }
+                }
+
+                &--active {
+                    a {
+                        color: @main-color;
+                    }
                 }
             }
+
             .menu-search-form {
                 .flex();
                 width: 80%;
                 display: none !important;
+
                 form {
                     width: 100%;
+
                     input {
                         width: 93%;
                         outline: none;
@@ -54,26 +72,39 @@
                         padding: 5px;
                     }
                 }
+
                 i {
                     align-self: center;
                     margin-top: 5px;
                 }
             }
         }
+
         .icon {
             display: flex;
+
             &__item {
                 padding-left: 28px;
                 padding: 0 27px;
                 border-right: 1px solid @grey-color;
-                cursor: pointer;
+
                 &:last-child {
                     padding-right: 0;
-                    border-right: 0;                   
-                }                
+                    border-right: 0;
+                }
+
+                i {
+                    cursor: pointer;
+
+                    &:hover {
+                        color: @main-color;
+                    }
+                }
             }
+
             .search {
                 position: relative;
+
                 .form-search {
                     display: none;
                     z-index: 10;
@@ -82,8 +113,10 @@
                     right: 0;
                     padding: 10px;
                     background-color: @grey-color;
+
                     form {
                         display: flex;
+
                         input {
                             width: 300px;
                             outline: none;
@@ -91,6 +124,7 @@
                     }
                 }
             }
+
             .menu-icon {
                 display: none;
             }

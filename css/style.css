@@ -516,6 +516,7 @@ input {
   font-weight: 400;
   padding: 10px 0;
   padding-left: 1px;
+  cursor: auto;
 }
 .footer__bottom .info__item .content__item i {
   margin-right: 17px;
@@ -525,6 +526,10 @@ input {
 }
 .footer__bottom .info__item .content__item:last-child {
   padding-top: 9px;
+}
+.footer__bottom .info__item .content__item--inner {
+  display: inline;
+  cursor: pointer;
 }
 .footer__bottom .info__item .content__item--inner:hover {
   color: #dd2f31;

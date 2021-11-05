@@ -64,6 +64,7 @@
                         font-weight: 400;
                         padding: 10px 0;
                         padding-left: 1px;
+                        cursor: auto;
 
                         i {
                             margin-right: 17px;
@@ -77,8 +78,13 @@
                             padding-top: 9px;
                         }
 
-                        &--inner:hover {
-                            color: @main-color;
+                        &--inner {
+                            display: inline;
+                            cursor: pointer;
+
+                            &:hover {
+                                color: @main-color;
+                            }
                         }
                     }
 

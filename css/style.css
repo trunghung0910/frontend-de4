@@ -145,6 +145,9 @@ input {
 .header__inner .icon__item i:hover {
   color: #dd2f31;
 }
+.header__inner .icon__item a {
+  color: #fff;
+}
 .header__inner .icon .search {
   position: relative;
 }
